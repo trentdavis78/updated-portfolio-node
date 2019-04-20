@@ -17,5 +17,15 @@
   "bugs": {
     "url": "https://github.com/trentdavis78/updated-portfolio-node/issues"
   },
-  "homepage": "https://github.com/trentdavis78/updated-portfolio-node#readme"
+  "homepage": "https://github.com/trentdavis78/updated-portfolio-node#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "mysql2": "^1.6.4",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.11",
+    "sequelize": "^4.41.2"
+  }
 }
