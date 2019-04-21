@@ -1,0 +1,132 @@
+@keyframes moveInLeft {
+  0% {
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(10px); }
+  100% {
+    visibility: visible;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    transform: translateX(150px); }
+  80% {
+    transform: translateX(-10px); }
+  100% {
+    visibility: visible;
+    transform: translate(0); } }
+
+@keyframes moveInFarRight {
+  0% {
+    transform: translateX(300px); }
+  80% {
+    transform: translateX(-10px); }
+  100% {
+    visibility: visible;
+    transform: translate(0); } }
+
+@keyframes moveInTop {
+  0% {
+    transform: translateY(-300px) rotate(3deg); }
+  70% {
+    transform: translateY(0) rotate(3deg); }
+  75% {
+    transform: translateY(-10px) rotate(1deg); }
+  100% {
+    visibility: visible;
+    transform: translate(0);
+    transform: rotate(0); } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+ul {
+  list-style-type: none !important; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  color: #303030; }
+
+h1, h2 {
+  color: #362f00; }
+
+.icon-sm {
+  font-size: 1.2rem; }
+
+.icon-med {
+  font-size: 2.4rem; }
+
+.icon-lg {
+  font-size: 4rem; }
+
+.icon-xl {
+  font-size: 6rem; }
+
+.text-tiny {
+  font-size: 1rem; }
+
+.text-small {
+  font-size: 1.2rem; }
+
+.img-overlay {
+  width: 521px;
+  height: 284px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 10px; }
+
+#monitor {
+  width: 265px;
+  position: absolute;
+  left: 105px;
+  top: 35px;
+  animation: moveInFarRight 1.2s ease-out .25s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+  z-index: -2; }
+
+#laptop-2 {
+  width: 220px;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  animation: moveInRight 1s ease-out .25s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+  z-index: -1; }
+
+#tablet {
+  width: 85px;
+  position: absolute;
+  left: 60px;
+  bottom: 30px;
+  animation: moveInLeft 1s ease-out .25s;
+  visibility: hidden;
+  animation-fill-mode: forwards; }
+
+#phone {
+  width: 40px;
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  visibility: hidden;
+  animation: moveInLeft 1s ease-out .33s;
+  animation-fill-mode: forwards; }

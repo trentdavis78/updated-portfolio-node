@@ -1,0 +1,52 @@
+.img-overlay  {
+    
+    width: 521px;
+    height: 284px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 10px;
+
+}
+
+#monitor {
+    width: 265px;
+    position: absolute;
+    left: 105px;
+    top: 35px;
+    animation: moveInFarRight 1.2s ease-out .25s;
+    visibility: hidden;   
+    animation-fill-mode:forwards;
+    z-index: -2;
+   
+}
+#laptop-2 {
+    width: 220px;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    animation: moveInRight 1s ease-out .25s;
+    visibility: hidden;   
+    animation-fill-mode:forwards;
+    z-index: -1;
+    
+}
+#tablet {
+    width: 85px;
+    position: absolute;
+    left: 60px;
+    bottom: 30px;
+    animation: moveInLeft 1s ease-out .25s;
+    visibility: hidden;   
+    animation-fill-mode:forwards;
+}
+
+#phone {
+    width: 40px;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    visibility: hidden;   
+    animation: moveInLeft 1s ease-out .33s;
+    animation-fill-mode:forwards;
+}

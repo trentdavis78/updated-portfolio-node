@@ -1,0 +1,278 @@
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column; 
+  }
+i.left {
+    margin-right: 10px;
+}
+i.right {
+    margin-left: 5px;
+}
+
+.m0 {
+    margin: 0 !important;
+}
+.p0 {
+    padding: 0 !important;
+}
+main {
+    flex: 1 0 auto;
+}
+  .btn {
+      padding: 0 1rem;
+  }
+  .brand-logo img {
+    position:relative; 
+    top:10px; 
+    left:20px;
+  }
+
+  .header-text {
+  font-size: 1.5rem;
+  color: #63707e;
+  padding-top: .5rem;
+  padding-bottom: .75rem;
+  line-height: 1.1;
+}
+.portfolio-cta {
+    margin-top: 3rem;
+}
+.portfolio-cta h5.white-text {
+    margin-bottom: 3rem;
+}
+.social-icons  {
+    margin-right: .5rem;
+    opacity: .85;
+}
+.contact-details {
+    line-height: 1.5;
+}
+.contact-details i {
+    padding-right: .25rem;
+}
+.show-hide {
+    cursor: pointer;  
+    padding-left: .5rem;
+}
+.show-hide:hover {
+    text-decoration: underline;
+}
+#phoneNumber {
+    display: inline-block;
+    min-width: 100px;
+}
+#emailAddress {
+    display: inline-block;
+    min-width: 170px;
+}
+#emailAddress a {
+    color: #fff;
+}
+.home-cards {
+    padding-top: 2rem;
+}
+.home-cards span {
+    display: block;
+    margin-top: 2rem;
+    text-align: center;
+}
+.card-vector {
+    background: #e4e4e4;
+    border: 5px solid grey;
+    width: 150px;
+    height: 150px;
+    line-height: 140px;
+    border-radius: 50%;
+    margin:auto;
+}
+.card-vector i {
+    line-height: inherit;
+    display: block;
+    text-align: center;
+    font-size: 4rem;
+    color: grey;
+}
+.card-content p {
+    line-height: 1.5;
+}
+.portfolio-panel {
+    background: #e4e4e4;
+    padding: 2rem;
+    margin-top: 1rem;
+    
+}
+.portfolio-panel h2 {
+    font-family: 'Bevan', cursive;
+    text-align: center;
+    margin-bottom: 2.424rem;
+}
+.tech-wrapper {
+    padding-top: 1rem;
+}
+.btn-tech {
+    padding: 0 .7rem;    
+}
+.btn-tech.disabled i {
+    opacity: .5;
+}
+
+.card-reveal-text {
+    margin-top: 2rem;
+}
+.project-title {
+    background: -moz-linear-gradient(left, rgba(0,0,0,1) 50%, rgba(82,82,82,1) 66%, rgba(199,199,199,0) 89%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(left, rgba(0,0,0,1) 50%,rgba(82,82,82,1) 66%,rgba(199,199,199,0) 89%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right, rgba(0,0,0,1) 50%,rgba(82,82,82,1) 66%,rgba(199,199,199,0) 89%,rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00ffffff',GradientType=1 );
+    width: 100%;
+    padding: 1rem !important;    
+}
+.card-action i {
+    margin-right: 3px;
+}
+.come-in {
+    transform: translateY(150px);
+    animation: come-in 0.8s ease forwards;
+  }
+  
+  .come-in:nth-child(odd) {
+    animation-duration: 0.6s;
+  }
+  .come-in:last-child {
+    animation-duration: 1.2s;
+  }
+  
+  .already-visible {
+    transform: translateY(0);
+    animation: none;
+  }
+  
+  @keyframes come-in {
+    to {
+      transform: translateY(0);
+    }
+  }
+.project-desc {
+    padding-bottom: .75rem;
+}
+.card-content.tech-content {
+    background: url(../images/stripes-light.png);
+    background-repeat: repeat;
+}
+.card.portfolio-card {
+    border: 5px solid #00695C;
+}
+.card .card-action:last-child {
+    border-radius: 0;
+}
+
+.card-image img {
+    border-radius: 0 !important;
+}
+.featured-tech {
+    display: block;
+    margin: .5rem 0;
+}
+.btn-flat {
+    padding: 0 1rem;
+}
+.fa-text {
+    font-family: sans-serif;
+    text-transform: initial;
+    font-weight: 400 !important;
+}
+@media only screen and (max-width: 600px) {
+    .brand-logo img {
+        position:relative; 
+        top:6px; 
+    }
+  }
+
+  @keyframes moveInLeft {
+    0% {
+      transform: translateX(-100px); }
+    80% {
+      transform: translateX(10px); }
+    100% {
+      visibility: visible;
+      transform: translate(0); } }
+  
+  @keyframes moveInRight {
+    0% {
+      transform: translateX(150px); }
+    80% {
+      transform: translateX(-10px); }
+    100% {
+      visibility: visible;
+      transform: translate(0); } }
+  
+  @keyframes moveInFarRight {
+    0% {
+      transform: translateX(300px); }
+    80% {
+      transform: translateX(-10px); }
+    100% {
+      visibility: visible;
+      transform: translate(0); } }
+  
+  @keyframes moveInTop {
+    0% {
+      transform: translateY(-300px) rotate(3deg); }
+    70% {
+      transform: translateY(0) rotate(3deg); }
+    75% {
+      transform: translateY(-10px) rotate(1deg); }
+    100% {
+      visibility: visible;
+      transform: translate(0);
+      transform: rotate(0); } }
+
+
+      .img-overlay {
+        width: 521px;
+        height: 284px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0 10px; }
+      
+      #monitor {
+        width: 265px;
+        position: absolute;
+        left: 105px;
+        top: 35px;
+        animation: moveInFarRight 1.2s ease-out .25s;
+        visibility: hidden;
+        animation-fill-mode: forwards;
+        z-index: -2; }
+      
+      #laptop-2 {
+        width: 220px;
+        position: absolute;
+        right: 25px;
+        bottom: 25px;
+        animation: moveInRight 1s ease-out .25s;
+        visibility: hidden;
+        animation-fill-mode: forwards;
+        z-index: -1; }
+      
+      #tablet {
+        width: 85px;
+        position: absolute;
+        left: 60px;
+        bottom: 30px;
+        animation: moveInLeft 1s ease-out .25s;
+        visibility: hidden;
+        animation-fill-mode: forwards; }
+      
+      #phone {
+        width: 40px;
+        position: absolute;
+        left: 30px;
+        bottom: 30px;
+        visibility: hidden;
+        animation: moveInLeft 1s ease-out .33s;
+        animation-fill-mode: forwards; }
+      
