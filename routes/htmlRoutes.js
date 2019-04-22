@@ -6,7 +6,7 @@ module.exports = function (app) {
         description: "Full Stack Web Developer in Austin, Texas",
         keywords: "web design austin texas"
       };
-      res.render('index', {"heading": "Full Stack Web Designer & Developer"});
+      res.render('index', {heading: "Full Stack Web Designer & Developer"});
     });
 
     app.get("/about", function (req, res) {
@@ -24,7 +24,7 @@ module.exports = function (app) {
           description: "Full Stack Web Developer in Austin, Texas",
           keywords: "web design austin texas"
         };
-        res.render('contact');
+        res.render('contact', {heading: "Contact Me For More Information"});
       });
 
       app.get("/portfolio", function (req, res) {
