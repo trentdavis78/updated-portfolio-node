@@ -7232,7 +7232,7 @@ h1, h2 {
   z-index: -2; }
 
 #power {
-  width: 10px;
+  width: 7px;
   position: absolute;
   left: 230px;
   top: 180px;
@@ -7254,9 +7254,7 @@ h1, h2 {
   position: absolute;
   right: 25px;
   bottom: 25px;
-  animation: moveInRight 1s ease-out .25s;
   visibility: hidden;
-  animation-fill-mode: forwards;
   z-index: -1; }
 
 #tablet {
