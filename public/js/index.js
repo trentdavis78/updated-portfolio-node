@@ -123,6 +123,7 @@ var allowedKeys = {
   function turnOffAio() {
     clearTimeout(booting);
     clearTimeout(booted);
+    $("#aioStart").hide();
     $("#aioOverlay").hide();
     $("#dellLogo").hide();
     $("#aioOverlay").css({
@@ -133,3 +134,4 @@ var allowedKeys = {
 
  
    $("#dellLogo").hide();
+   $("#laptop-2").draggable({ axis: "x" });
