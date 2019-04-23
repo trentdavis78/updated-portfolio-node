@@ -17,7 +17,7 @@
     margin: 0 10px;
 }
 
-#monitor {
+#aio {
     width: 265px;
     position: absolute;
     left: 105px;
@@ -27,10 +27,26 @@
     animation-fill-mode:forwards;
     z-index: -2;   
 }
+#aioOverlay {
+    width: 24.5rem;
+    height: 14rem;
+    position: relative;
+    left: 115px;
+    top: 45px;
+    background-color: lighten($color-black, 10%);
+
+    & svg {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+}
 #power {
-    width: 7px; 
+    width: 5px; 
     position: absolute;
-    left: 230px;
+    right: 15.5rem;
     top: 180px;
     animation: moveInFarRight 1.2s ease-out .25s;
     visibility: hidden;   
@@ -42,8 +58,8 @@
         width: 10px;
         height: 12px;
         position: absolute;
-        left: 230px;
-        top: 200px;
+        right: 15.5rem;
+        top: 20rem;
         background-color: transparent;
        }
 }
@@ -54,7 +70,7 @@
     bottom: 25px;
     // animation: moveInRight 1s ease-out .25s;
     visibility: hidden;   
-    // animation-fill-mode:forwards; 
+    animation-fill-mode:forwards; 
     z-index: -1;
     
 }

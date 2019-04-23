@@ -6951,6 +6951,12 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     transform: translate(0);
     transform: rotate(0); } }
 
+@keyframes appear {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 *,
 *::after,
 *::before {
@@ -7221,7 +7227,7 @@ h1, h2 {
   left: 0;
   margin: 0 10px; }
 
-#monitor {
+#aio {
   width: 265px;
   position: absolute;
   left: 105px;
@@ -7231,10 +7237,23 @@ h1, h2 {
   animation-fill-mode: forwards;
   z-index: -2; }
 
+#aioOverlay {
+  width: 24.5rem;
+  height: 14rem;
+  position: relative;
+  left: 115px;
+  top: 45px;
+  background-color: #1a1a1a; }
+  #aioOverlay svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+
 #power {
-  width: 7px;
+  width: 5px;
   position: absolute;
-  left: 230px;
+  right: 15.5rem;
   top: 180px;
   animation: moveInFarRight 1.2s ease-out .25s;
   visibility: hidden;
@@ -7245,8 +7264,8 @@ h1, h2 {
     width: 10px;
     height: 12px;
     position: absolute;
-    left: 230px;
-    top: 200px;
+    right: 15.5rem;
+    top: 20rem;
     background-color: transparent; }
 
 #laptop-2 {
@@ -7255,6 +7274,7 @@ h1, h2 {
   right: 25px;
   bottom: 25px;
   visibility: hidden;
+  animation-fill-mode: forwards;
   z-index: -1; }
 
 #tablet {

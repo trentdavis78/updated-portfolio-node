@@ -75,14 +75,61 @@ var allowedKeys = {
     });
   });
 
-  $("#power__btn").on("click", function(){
-    if($(this).attr("data-power") === "on") {
+  let resetCounter = 0;
+  let booting;
+  let booted;
+  $("#power__btn").on("click", function(){ 
+    switch ($(this).attr("data-power")) {
+      case "on":
       $("#power path").attr("fill", "#FF931E");
-      $(this).attr("data-power", "off")
-    } else if($(this).attr("data-power") === "off") {
-      $("#power path").attr("fill", "#32CD32");
-      $(this).attr("data-power", "on")
-    }   
-    console.log("Click");
-   });
+      $(this).attr("data-power", "off");      
+      turnOffAio()
+        break;
+      
+      case "off":
+      $("#power path").attr("fill", "#ffffff");
+      $(this).attr("data-power", "on");
+      turnOnAio();
+      break;
 
+      default:
+        break;
+    }
+  });
+
+  function turnOnAio() { 
+    $("#aioOverlay").show();
+    if(resetCounter === 3) {
+      console.log("Recovery Environment!");
+    } else {
+      booting = setTimeout(() => {
+        $("#dellLogo").show();
+        resetCounter++;
+        console.log(resetCounter);
+        booted = setTimeout(() => {
+            resetCounter = 0;
+            console.log(resetCounter);
+            $("#dellLogo").hide();
+            $("#aioOverlay").css({
+              backgroundImage: "url(../../../images/windows10.jpg)",
+              backgroundSize: "cover"
+            });
+            
+          }, 2000)
+      }, 1500)
+    }    
+  }
+
+  function turnOffAio() {
+    clearTimeout(booting);
+    clearTimeout(booted);
+    $("#aioOverlay").hide();
+    $("#dellLogo").hide();
+    $("#aioOverlay").css({
+            backgroundImage: "none",
+            backgroundSize: "none"
+          });
+  }
+
+ 
+   $("#dellLogo").hide();
