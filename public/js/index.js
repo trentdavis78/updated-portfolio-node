@@ -68,9 +68,21 @@ var allowedKeys = {
           $(this).attr("data-visibility", "hidden");
           $("#emailToggle").text("Show");
         }
+     
     });
     $(document).ready(function(){
       $('.collapsible').collapsible();
     });
   });
+
+  $("#power__btn").on("click", function(){
+    if($(this).attr("data-power") === "on") {
+      $("#power path").attr("fill", "#FF931E");
+      $(this).attr("data-power", "off")
+    } else if($(this).attr("data-power") === "off") {
+      $("#power path").attr("fill", "#32CD32");
+      $(this).attr("data-power", "on")
+    }   
+    console.log("Click");
+   });
 

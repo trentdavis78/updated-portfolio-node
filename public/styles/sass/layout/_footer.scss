@@ -39,4 +39,8 @@
 }
 #emailAddress {   
     min-width: 170px;
+
+    & a {
+        color: $color-white;
+    }
 }

@@ -7002,6 +7002,14 @@ h1, h2 {
 .p-0 {
   padding: 0 !important; }
 
+.noSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
 .card__vector {
   background: #e4e4e4;
   border: 5px solid grey;
@@ -7196,6 +7204,8 @@ h1, h2 {
 
 #emailAddress {
   min-width: 170px; }
+  #emailAddress a {
+    color: #fff; }
 
 .portfolio-cta {
   margin-top: 3rem; }
@@ -7220,6 +7230,24 @@ h1, h2 {
   visibility: hidden;
   animation-fill-mode: forwards;
   z-index: -2; }
+
+#power {
+  width: 10px;
+  position: absolute;
+  left: 230px;
+  top: 180px;
+  animation: moveInFarRight 1.2s ease-out .25s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+  z-index: -1;
+  opacity: .7; }
+  #power__btn {
+    width: 10px;
+    height: 12px;
+    position: absolute;
+    left: 230px;
+    top: 200px;
+    background-color: transparent; }
 
 #laptop-2 {
   width: 220px;
