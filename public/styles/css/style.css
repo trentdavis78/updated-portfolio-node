@@ -6996,6 +6996,37 @@ h1, h2 {
 .text-small {
   font-size: 1.2rem; }
 
+.m-0 {
+  margin: 0 !important; }
+
+.p-0 {
+  padding: 0 !important; }
+
+.card__vector {
+  background: #e4e4e4;
+  border: 5px solid grey;
+  width: 150px;
+  height: 150px;
+  line-height: 140px;
+  border-radius: 50%;
+  margin: auto; }
+  .card__vector i {
+    line-height: inherit;
+    display: block;
+    text-align: center;
+    font-size: 6rem;
+    color: grey; }
+
+.card-content p {
+  line-height: 1.5; }
+
+.card__home {
+  padding-top: 2rem; }
+  .card__home span {
+    display: block;
+    margin-top: 2rem;
+    text-align: center; }
+
 .wrapper {
   box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7); }
 
@@ -7050,6 +7081,71 @@ h1, h2 {
     padding: 2em; }
   .company-info h3, .company-info ul, .brand {
     text-align: left; } }
+
+.header__text {
+  font-size: 1.8rem;
+  color: #63707e;
+  padding-top: .5rem;
+  padding-bottom: .75rem;
+  line-height: 1.1; }
+
+.header__logo img {
+  position: relative;
+  top: 10px;
+  left: 20px; }
+
+.header__logo__text {
+  position: relative;
+  left: 1.5rem;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.8rem; }
+
+.header__heading {
+  font-size: 1.8rem;
+  color: #63707e;
+  padding-top: .5rem;
+  padding-bottom: .75rem;
+  line-height: 1.1; }
+
+@media only screen and (max-width: 600px) {
+  .header__logo img {
+    position: relative;
+    top: 6px; } }
+
+.footer__contact__details {
+  line-height: 1.5;
+  font-size: 1.4rem; }
+  .footer__contact__details h5 {
+    font-size: 2.4rem; }
+  .footer__contact__details i {
+    padding-right: .25rem; }
+  .footer__contact__details--show-hide {
+    cursor: pointer;
+    padding-left: .5rem;
+    display: inline-block; }
+    .footer__contact__details--show-hide:hover {
+      text-decoration: underline; }
+
+.footer__copyright {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  color: #fff; }
+
+.footer__icons {
+  margin-right: .5rem;
+  opacity: .85; }
+
+#phoneNumber {
+  min-width: 100px; }
+
+#emailAddress {
+  min-width: 170px; }
+
+.portfolio-cta {
+  margin-top: 3rem; }
+  .portfolio-cta h2.white-text {
+    margin-bottom: 3rem;
+    font-size: 2.5rem; }
 
 .img-overlay {
   width: 521px;

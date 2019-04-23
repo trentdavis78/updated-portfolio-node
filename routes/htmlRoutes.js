@@ -15,7 +15,7 @@ module.exports = function (app) {
           description: "Full Stack Web Developer in Austin, Texas",
           keywords: "web design austin texas"
         };
-        res.render('about');
+        res.render('about', {heading: "All About Me"});
       });
 
       app.get("/contact", function (req, res) {
@@ -24,7 +24,7 @@ module.exports = function (app) {
           description: "Full Stack Web Developer in Austin, Texas",
           keywords: "web design austin texas"
         };
-        res.render('contact', {heading: "Contact Me For More Information"});
+        res.render('contact', {heading: "Questions or Comments?"});
       });
 
       app.get("/portfolio", function (req, res) {
@@ -33,7 +33,7 @@ module.exports = function (app) {
           description: "Full Stack Web Developer in Austin, Texas",
           keywords: "web design austin texas"
         };
-        res.render('portfolio');
+        res.render('portfolio', {heading: "Project and Website Portfolio"});
       });
 
       app.get("/resources", function (req, res) {
@@ -42,7 +42,7 @@ module.exports = function (app) {
           description: "Full Stack Web Developer in Austin, Texas",
           keywords: "web design austin texas"
         };
-        res.render('resources');
+        res.render('resources', {heading: "Curated Collection of Resources"});
       });
 
       app.get("/services", function (req, res) {
@@ -51,7 +51,7 @@ module.exports = function (app) {
           description: "Full Stack Web Developer in Austin, Texas",
           keywords: "web design austin texas"
         };
-        res.render('services');
+        res.render('services', {heading: "Hourly and Flat Rate Freelance Work"});
       });
 
       app.use(function(req,res){

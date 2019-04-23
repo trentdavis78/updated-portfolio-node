@@ -1,0 +1,34 @@
+.card {
+
+    &__vector {
+        background: #e4e4e4;
+        border: 5px solid grey;
+        width: 150px;
+        height: 150px;
+        line-height: 140px;
+        border-radius: 50%;
+        margin:auto;
+
+        & i {
+            line-height: inherit;
+            display: block;
+            text-align: center;
+            font-size: 6rem;
+            color: grey;
+        }        
+    }
+    &-content {
+        p {
+            line-height: 1.5;
+        }
+    }
+    &__home {
+        padding-top: 2rem;
+
+        & span {
+            display: block;
+            margin-top: 2rem;
+            text-align: center;
+        }
+    }
+}

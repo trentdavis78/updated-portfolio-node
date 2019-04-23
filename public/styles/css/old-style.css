@@ -1,48 +1,24 @@
-
-  body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column; 
-  }
-i.left {
+/* i.left {
     margin-right: 10px;
 }
 i.right {
     margin-left: 5px;
-}
+} */
 
-.m0 {
+/* .m0 {
     margin: 0 !important;
 }
 .p0 {
     padding: 0 !important;
-}
-main {
-    flex: 1 0 auto;
-}
-  .btn {
-      padding: 0 1rem;
-  }
-  .brand-logo img {
+} */
+
+
+  /* .brand-logo img {
     position:relative; 
     top:10px; 
     left:20px;
-  }
-
-  .header-text {
-  font-size: 1.5rem;
-  color: #63707e;
-  padding-top: .5rem;
-  padding-bottom: .75rem;
-  line-height: 1.1;
-}
-.portfolio-cta {
-    margin-top: 3rem;
-}
-.portfolio-cta h5.white-text {
-    margin-bottom: 3rem;
-}
-.social-icons  {
+  } */
+/* .social-icons  {
     margin-right: .5rem;
     opacity: .85;
 }
@@ -51,8 +27,8 @@ main {
 }
 .contact-details i {
     padding-right: .25rem;
-}
-.show-hide {
+} */
+/* .show-hide {
     cursor: pointer;  
     padding-left: .5rem;
 }
@@ -69,16 +45,16 @@ main {
 }
 #emailAddress a {
     color: #fff;
-}
-.home-cards {
+} */
+/* .home-cards {
     padding-top: 2rem;
 }
 .home-cards span {
     display: block;
     margin-top: 2rem;
     text-align: center;
-}
-.card-vector {
+} */
+/* .card-vector {
     background: #e4e4e4;
     border: 5px solid grey;
     width: 150px;
@@ -96,7 +72,7 @@ main {
 }
 .card-content p {
     line-height: 1.5;
-}
+} */
 .portfolio-panel {
     background: #e4e4e4;
     padding: 2rem;

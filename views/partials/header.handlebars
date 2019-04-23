@@ -1,37 +1,35 @@
- <!-- MOBILE RESPONSIVE MENU -->
-    <header>
-        <nav>
-            <div class="nav-wrapper teal darken-3">
-                <div class="container">
-                    <a href="/" class="brand-logo">
-                        <img src="/images/logo.svg" class="responsive-img" alt="TDWeb.dev Logo">
-                        <small
-                            style="position:relative;left:13px;font-family: 'Permanent Marker', cursive;">Web.dev</small></a>
-                    <a href="#!" data-activates="mobile-demo" class="button-collapse"><i
-                            class="material-icons">menu</i></a>
-                    <ul class="right hide-on-med-and-down">
-                        <li class="nav-item"><a href="/">Home</a></li>
-                        <li class="nav-item"><a href="/portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a href="/about">About</a></li>
-                        <li class="nav-item"><a href="/services">Services</a></li>
-                        <li class="nav-item"><a href="/resources">Resources</a></li>
-                        <li class="nav-item"><a href="/contact">Contact</a></li>
-                    </ul>
-                    <ul class="side-nav" id="mobile-demo">
-                        <li class="nav-item active"><a href="/">Home</a></li>
-                        <li class="nav-item"><a href="/portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a href="/about">About</a></li>
-                        <li class="nav-item"><a href="/services">Services</a></li>
-                        <li class="nav-item"><a href="/resources">Resources</a></li>
-                        <li class="nav-item"><a href="/contact">Contact</a></li>
-                    </ul>
-                </div>
+<!-- MOBILE RESPONSIVE MENU -->
+<header class="header">
+    <nav>
+        <div class="nav-wrapper teal darken-3">
+            <div class="container">
+                <a href="/" class="header__logo">
+                    <img src="/images/logo.svg" class="responsive-img" alt="TDWeb.dev Logo">
+                    <span class="header__logo__text">Web.dev</span></a>
+                <a href="#!" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li class="nav-item"><a href="/">Home</a></li>
+                    <li class="nav-item"><a href="/portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a href="/about">About</a></li>
+                    <li class="nav-item"><a href="/services">Services</a></li>
+                    <li class="nav-item"><a href="/resources">Resources</a></li>
+                    <li class="nav-item"><a href="/contact">Contact</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li class="nav-item active"><a href="/">Home</a></li>
+                    <li class="nav-item"><a href="/portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a href="/about">About</a></li>
+                    <li class="nav-item"><a href="/services">Services</a></li>
+                    <li class="nav-item"><a href="/resources">Resources</a></li>
+                    <li class="nav-item"><a href="/contact">Contact</a></li>
+                </ul>
             </div>
-        </nav>   
+        </div>
+    </nav>
     <div class="container">
-        <h1 class="header-text center-align">
-           {{ heading }}
+        <h1 class="header__heading center-align">
+            {{ heading }}
         </h1>
     </div>
     <div class="container divider"></div>
-    </header>   
+</header>

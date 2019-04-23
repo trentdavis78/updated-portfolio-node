@@ -1,0 +1,42 @@
+.footer {
+
+    &__contact__details {
+        line-height: 1.5;
+        font-size: 1.4rem;
+
+        h5 {
+            font-size: 2.4rem;
+        }
+        & i {
+          padding-right: .25rem;
+        }
+
+        &--show-hide {
+            cursor: pointer;  
+            padding-left: .5rem;
+            display: inline-block;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__copyright {
+        font-size: 1.4rem;
+        padding: 1rem 0;
+        color: $color-white;
+    }
+
+    &__icons {
+        margin-right: .5rem;
+        opacity: .85;
+    }    
+}
+
+#phoneNumber {    
+    min-width: 100px;
+}
+#emailAddress {   
+    min-width: 170px;
+}

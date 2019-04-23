@@ -1,0 +1,38 @@
+.header {
+
+    &__text {
+        font-size: 1.8rem;
+        color: #63707e; 
+        padding-top: .5rem;
+        padding-bottom: .75rem;
+        line-height: 1.1;
+    }
+    &__logo {        
+        img {
+            position:relative; 
+            top:10px; 
+            left:20px;
+        }        
+        &__text {
+            position:relative;
+            left: 1.5rem;
+            font-family: 'Permanent Marker', cursive;
+            font-size: 1.8rem;
+        }
+    }
+
+    &__heading  {
+        font-size: 1.8rem;
+        color: #63707e;
+        padding-top: .5rem;
+        padding-bottom: .75rem;
+        line-height: 1.1;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header__logo img {
+        position:relative; 
+        top:6px; 
+    }
+  }
