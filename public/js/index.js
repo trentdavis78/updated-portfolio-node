@@ -74,7 +74,6 @@ var allowedKeys = {
       $('.collapsible').collapsible();
     });
   });
-
   let resetCounter = 0;
   let booting;
   let booted;
@@ -96,11 +95,10 @@ var allowedKeys = {
         break;
     }
   });
-
   function turnOnAio() { 
     $("#aioOverlay").show();
     if(resetCounter === 3) {
-      console.log("Recovery Environment!");
+      activateCheats();
     } else {
       booting = setTimeout(() => {
         $("#dellLogo").show();
@@ -119,7 +117,6 @@ var allowedKeys = {
       }, 1500)
     }    
   }
-
   function turnOffAio() {
     clearTimeout(booting);
     clearTimeout(booted);
@@ -131,7 +128,5 @@ var allowedKeys = {
             backgroundSize: "none"
           });
   }
-
- 
    $("#dellLogo").hide();
    $("#laptop-2").draggable({ axis: "x" });
