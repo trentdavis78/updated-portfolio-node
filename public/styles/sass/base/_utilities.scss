@@ -4,7 +4,12 @@
 .p-0 {
     padding: 0 !important;
 }
-
+.hidden {
+    display: none;
+}
+.visible {
+    display: visible;
+}
 .noSelect {
     -webkit-touch-callout: none;
     -webkit-user-select: none;

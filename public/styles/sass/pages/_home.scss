@@ -27,16 +27,19 @@
     animation-fill-mode:forwards;
     z-index: -2;   
 }
-#aioStart {
+#aioImage {
     width: 24.5rem;
     height: 14rem;
-    position: absolute;
+    position: absolute; 
     left: 115px;
     top: 45px;
-    animation: moveInFarRight 1.2s ease-out .25s;
-    visibility: hidden;   
-    animation-fill-mode:forwards;
-    z-index: -2;   
+
+    &.animated {
+        animation: moveInFarRight 1.2s ease-out .25s;
+        visibility: hidden;   
+        animation-fill-mode:forwards;
+        z-index: -2; 
+    }  
 }
 #aioOverlay {
     width: 24.5rem;

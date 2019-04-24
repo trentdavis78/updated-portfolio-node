@@ -7008,6 +7008,12 @@ h1, h2 {
 .p-0 {
   padding: 0 !important; }
 
+.hidden {
+  display: none; }
+
+.visible {
+  display: visible; }
+
 .noSelect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -7237,16 +7243,17 @@ h1, h2 {
   animation-fill-mode: forwards;
   z-index: -2; }
 
-#aioStart {
+#aioImage {
   width: 24.5rem;
   height: 14rem;
   position: absolute;
   left: 115px;
-  top: 45px;
-  animation: moveInFarRight 1.2s ease-out .25s;
-  visibility: hidden;
-  animation-fill-mode: forwards;
-  z-index: -2; }
+  top: 45px; }
+  #aioImage.animated {
+    animation: moveInFarRight 1.2s ease-out .25s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    z-index: -2; }
 
 #aioOverlay {
   width: 24.5rem;
