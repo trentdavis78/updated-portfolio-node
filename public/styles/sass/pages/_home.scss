@@ -22,7 +22,7 @@
     position: absolute;
     left: 105px;
     top: 35px;
-    animation: moveInFarRight 1.2s ease-out .25s;
+    animation: moveInFarRight .51s ease-out .33s;
     visibility: hidden;   
     animation-fill-mode:forwards;
     z-index: -2;   
@@ -35,7 +35,7 @@
     top: 45px;
 
     &.animated {
-        animation: moveInFarRight 1.2s ease-out .25s;
+        animation: moveInFarRight .51s ease-out .33s;
         visibility: hidden;   
         animation-fill-mode:forwards;
         z-index: -2; 
@@ -62,7 +62,7 @@
     position: absolute;
     right: 15.5rem;
     top: 180px;
-    animation: moveInFarRight 1.2s ease-out .25s;
+    animation: moveInFarRight .51s ease-out .33s;
     visibility: hidden;   
     animation-fill-mode:forwards;
     z-index: -1;       
@@ -83,7 +83,7 @@
     position: absolute;
     right: 25px;
     bottom: 25px;
-    animation: moveInRight 1s ease-out .25s;
+    animation: moveInRight .3s ease-out .33s;
     visibility: hidden;   
     animation-fill-mode:forwards; 
   
@@ -94,7 +94,7 @@
     position: absolute;
     left: 60px;
     bottom: 30px;
-    animation: moveInLeft 1s ease-out .25s;
+    animation: moveInLeft .3s ease-out .33s;
     visibility: hidden;   
     animation-fill-mode:forwards;
 }
@@ -105,6 +105,6 @@
     left: 30px;
     bottom: 30px;
     visibility: hidden;   
-    animation: moveInLeft 1s ease-out .33s;
+    animation: moveInLeft .3s ease-out .33s;
     animation-fill-mode:forwards;
 }

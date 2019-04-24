@@ -46,17 +46,15 @@
       booting = setTimeout(() => {
         $("#dellLogo").show();
         resetCounter++;
-        console.log(resetCounter);
         booted = setTimeout(() => {
             resetCounter = 0;
-            console.log(resetCounter);
             $("#dellLogo").hide();
             $("#aioOverlay").hide();     
             if(isBSODing) {
               let itsNotFixed = (min, max) => Math.random() * (max - min) + min;
               startBSOD(itsNotFixed(1000, 5000));
             } 
-          }, 2000)
+          }, 3000)
       }, 1500)
     }    
   }
