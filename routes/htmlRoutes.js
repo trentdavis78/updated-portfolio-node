@@ -1,3 +1,5 @@
+const Project = require('../models/projects');
+const mongoose = require('mongoose');
 module.exports = function (app) {
     // Load index page
     app.get("/", function (req, res) {
@@ -33,7 +35,10 @@ module.exports = function (app) {
           description: "Full Stack Web Developer in Austin, Texas",
           keywords: "web design austin texas"
         };
-        res.render('portfolio', {heading: "Project and Website Portfolio"});
+        Project.find({}, (err, projects) => {
+          res.render('portfolio', {projects});
+        });
+        
       });
 
       app.get("/resources", function (req, res) {

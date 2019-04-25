@@ -38,13 +38,14 @@ function startBSOD(interval) {
 startBSOD(5000);
 // function to handle turning the AIO on
 function turnOnAio() {
-  $("#aioOverlay").show();
+ 
   if (!isBroken) {
+    $("#aioOverlay").show();
     $("#aioImage").attr("src", "images/windows10.jpg");
   }
   $("#aioImage").removeClass("hidden");
   $("#aioImage").removeClass("animated");
-  if (resetCounter === 3) {
+  if (resetCounter === 3 && !isBroken) {
     isBSODing = false;
     clearTimeout(bsod);
     resetCounter++;

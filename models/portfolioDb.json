@@ -1,0 +1,44 @@
+{    
+    "name": "$this",
+    "photo_url": "/images/this.jpg",
+    "short_desc": "Portfolio of projects & websites",
+    "long_desc": "Lorem ipsum dolerat....",
+    "git_url": "https://github.com/trentdavis78/updated-portfolio-node",
+    "live_url": "https://tdweb.dev",
+    "tags": [
+        "html",
+        "css",
+        "js",
+        "mongodb"
+    ]    
+}
+{    
+    "name": "TACTApp",
+    "photo_url": "/images/tactapp.jpg",
+    "short_desc": "Portfolio of projects & websites",
+    "long_desc": "Lorem ipsum dolerat....",
+    "git_url": "https://github.com/trentdavis78/updated-portfolio-node",
+    "live_url": "https://tdweb.dev",
+    "tags": [
+        "html",
+        "css",
+        "js",
+        "firebase"
+    ]    
+}
+{    
+    "name": "IQ Trivia",
+    "photo_url": "/images/triviagame.jpg",
+    "short_desc": "Portfolio of projects & websites",
+    "long_desc": "Lorem ipsum dolerat....",
+    "git_url": "https://github.com/trentdavis78/updated-portfolio-node",
+    "live_url": "https://tdweb.dev",
+    "tags": [
+        "html",
+        "css",
+        "js",
+        "firebase"
+    ]    
+}
+
+

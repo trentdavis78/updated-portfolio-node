@@ -1,8 +1,22 @@
 require("dotenv").config();
-var express = require("express");
-var exphbs = require("express-handlebars");
-var app = express();
-var PORT = process.env.PORT || 3000;
+const express = require("express");
+const exphbs = require("express-handlebars");
+const app = express();
+const PORT = process.env.PORT || 3000;
+const mongoose = require('mongoose');
+
+mongoose.connect("mongodb://localhost:27017/portfolioDb", { useNewUrlParser: true });
+let db = mongoose.connection;
+
+// Check connection
+db.once('open', () => {
+  console.log("Connected to MongoDB")
+});
+
+// Check for db errors
+db.on('error', err => {
+  console.log(err);
+});
 
 // Middleware
 app.use(express.urlencoded({ extended: false }));
