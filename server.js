@@ -2,10 +2,13 @@ require("dotenv").config();
 const express = require("express");
 const exphbs = require("express-handlebars");
 const app = express();
-const PORT = process.env.PORT || 3000;
 const mongoose = require('mongoose');
+const {
+  PORT,
+  DATABASE_URL
+} = require('./config');
 
-mongoose.connect("mongodb://localhost:27017/portfolioDb", { useNewUrlParser: true });
+mongoose.connect(DATABASE_URL, { useNewUrlParser: true });
 let db = mongoose.connection;
 
 // Check connection
