@@ -37,7 +37,6 @@ module.exports = function (app) {
         };
         Project.find({}, (err, projects) => {
           res.render('portfolio', {projects});
-          console.log("response of: " + projects);
         });
         
       });
