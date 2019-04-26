@@ -22,7 +22,7 @@ const projectSchema = mongoose.Schema({
   },
   tags: {
     type: Array
-  }
+  } 
 })
 
 const Project = module.exports = mongoose.model('Project', projectSchema);
