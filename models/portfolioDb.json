@@ -6,9 +6,9 @@
     "git_url": "https://github.com/trentdavis78/updated-portfolio-node",
     "live_url": "https://tdweb.dev",
     "tags": [
-        "html",
-        "css",
-        "js",
+        "html5",
+        "css3",
+        "javascript",
         "mongodb"
     ]    
 }
@@ -20,10 +20,9 @@
     "git_url": "https://github.com/trentdavis78/updated-portfolio-node",
     "live_url": "https://tdweb.dev",
     "tags": [
-        "html",
-        "css",
-        "js",
-        "firebase"
+        "html5",
+        "css3",
+        "javascript"
     ]    
 }
 {    
@@ -34,10 +33,10 @@
     "git_url": "https://github.com/trentdavis78/updated-portfolio-node",
     "live_url": "https://tdweb.dev",
     "tags": [
-        "html",
-        "css",
-        "js",
-        "firebase"
+        "html5",
+        "css3",
+        "javascript",
+        "jquery"
     ]    
 }
 

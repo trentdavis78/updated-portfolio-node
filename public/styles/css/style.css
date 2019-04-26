@@ -7087,9 +7087,9 @@ h1, h2 {
     font-size: 2.8rem;
     font-weight: 300;
     text-transform: uppercase;
-    color: #fff;
+    color: #000;
     position: absolute;
-    top: 12rem;
+    top: 20rem;
     right: 2rem;
     text-align: right;
     width: 75%; }
@@ -7136,15 +7136,16 @@ h1, h2 {
 .contact form button, .contact form input, .contact form textarea {
   width: 100%;
   padding: 1em;
-  border: 1px solid #c9e6ff; }
+  border: 1px solid #695C00; }
 
 .contact form button {
-  background: #c9e6ff;
+  background: #5B0069;
+  color: #fff;
   border: 0;
   text-transform: uppercase; }
 
 .contact form button:hover, .contact form button:focus {
-  background: #92bde7;
+  background: #9d00b6;
   color: #fff;
   outline: 0;
   transition: background-color 2s ease-out; }

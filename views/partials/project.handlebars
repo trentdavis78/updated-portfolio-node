@@ -2,13 +2,19 @@
                     <div class="portfolio__card">
                         <div class="portfolio__card__side portfolio__card__side--front">
                             <div class="portfolio__card__picture portfolio__card__picture--1">
-                                <img src="/images/this.jpg" alt="image">
+                                <img src="{{this.photo_url}}" alt="image">
                             </div>
                             <h4 class="portfolio__card__heading">
-                                
+                                {{this.name}}                                
                             </h4>
                             <div class="portfolio__card__details">
-
+                                <h6>{{this.short_desc}}</h6>
+                                <p>{{this.long_desc}}</p>
+                            </div>
+                            <div class="portfolio__card__tags">
+                                {{#each tags}}
+                                <i class="devicon-{{this}}-plain colored small"></i>
+                                {{/each}}
                             </div>
                         </div>
                         <div class="portfolio__card__side portfolio__card__side--back portfolio__card__side--back-1">

@@ -40,18 +40,19 @@
   .contact form button, .contact form input, .contact form textarea{
     width:100%;
     padding:1em;
-    border:1px solid #c9e6ff;
+    border:1px solid $color-secondary;
   }
   
   .contact form button{
-    background:#c9e6ff;
+    background: $color-tertiary;
+    color: $color-white;
     border:0;
     text-transform: uppercase;
   }
   
   .contact form button:hover,.contact form button:focus{
-    background:#92bde7;
-    color:#fff;
+    background: $color-tertiary-light;
+    color: $color-white;
     outline:0;
     transition: background-color 2s ease-out;
   }
