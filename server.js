@@ -5,7 +5,7 @@ const app = express();
 const mongoose = require('mongoose');
 // If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/portfolioDb";
-var PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 let db = mongoose.connection;
