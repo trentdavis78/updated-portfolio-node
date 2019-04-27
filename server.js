@@ -3,19 +3,16 @@ const express = require("express");
 const exphbs = require("express-handlebars");
 const app = express();
 const mongoose = require('mongoose');
-const {
-  PORT,
-  DATABASE_URL
-} = require('./config');
+// If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/portfolioDb";
 
-mongoose.connect(DATABASE_URL, { useNewUrlParser: true });
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 let db = mongoose.connection;
 
 // Check connection
 db.once('open', () => {
   console.log("Connected to MongoDB")
 });
-
 // Check for db errors
 db.on('error', err => {
   console.log(err);
