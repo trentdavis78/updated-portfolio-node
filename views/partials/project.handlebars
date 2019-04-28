@@ -1,26 +1,36 @@
 <div class="col s12 m12 lg4 xl4">
-                    <div class="portfolio__card">
-                        <div class="portfolio__card__side portfolio__card__side--front">
-                            <div class="portfolio__card__picture portfolio__card__picture--1">
-                                <img src="{{this.photo_url}}" alt="image">
-                            </div>
-                            <h4 class="portfolio__card__heading">
-                                {{this.name}}                                
-                            </h4>
-                            <div class="portfolio__card__details">
-                                <h6>{{this.short_desc}}</h6>
-                                <p>{{this.long_desc}}</p>
-                            </div>
-                            <div class="portfolio__card__tags">
-                                {{#each tags}}
-                                <i class="devicon-{{this}}-plain colored small"></i>
-                                {{/each}}
-                            </div>
-                        </div>
-                        <div class="portfolio__card__side portfolio__card__side--back portfolio__card__side--back-1">
-                            <div class="portfolio__card__cta">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="portfolio__card">
+        <div class="portfolio__card__side portfolio__card__side--front">
+            <div class="portfolio__card__picture portfolio__card__picture--1">
+                <img src="{{this.photo_url}}" alt="image">
+            </div>
+            <h4 class="portfolio__card__heading">
+                {{this.name}}
+            </h4>
+            <div class="portfolio__card__details">
+                {{!-- <h5>{{this.short_desc}}</h5> --}}
+                <p class="text-small">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis dicta sit officia earum
+                    repellendus mollitia eaque sint neque quos voluptatum atque porro suscipit, consectetur aliquam,
+                    officiis aut, quisquam culpa.
+                    {{this.long_desc}}</p>
+            </div>
+            <div class="portfolio__card__tags">
+                <h6>Featured Technologies</h6>
+                {{#each tags}}
+                <i class="devicon-{{this}}-plain colored small"></i>
+                {{/each}}
+            </div>
+        </div>
+        <div class="portfolio__card__side portfolio__card__side--back portfolio__card__side--back-1">
+            <div class="portfolio__card__cta">
+                <p class="text-small white-text text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit neque autem, accusantium debitis
+                    repellat a nemo ea earum sit enim veritatis necessitatibus impedit harum quo distinctio iure
+                    inventore molestias. Eum!</p>
+                <a href={{this.git_url}}><i class="fab fa-github icon-xl white-text"></i></a>
+                <a href={{this.live_url}}><i class="fas fa-globe icon-xl white-text"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
